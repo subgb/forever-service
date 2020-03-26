@@ -11,6 +11,10 @@ Goals
 2. Automatically configure other useful things such as Logrotation scripts, port monitoring scripts etc.
 3. Graceful shutdown of services as default behaviour.
 
+Bugfix
+-----
+Fix stop service PID regex for when more than 10 running instances.
+
 Platforms supported
 -------------------
 * Amazon Linux
@@ -34,7 +38,7 @@ forever must be installed globally using
 
 Install
 -------
-```npm install -g forever-service```
+```npm install -g @subns/forever-service```
 
 Usage
 -----
