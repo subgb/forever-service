@@ -23,6 +23,11 @@
 #	CLI {{cli}}
 #	Working Directory {{cwd}}
 
+# Export Global Environment variables
+set -a
+. /etc/environment
+set +a
+
 #Setup Environment variables (if any)
 {% if envVarsArray|default(false) %}
 {% for v in envVarsArray %}
